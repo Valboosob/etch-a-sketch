@@ -1,0 +1,17 @@
+
+#box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 156px;
+    height: 150px;
+}
+
+.square {
+    background: pink;
+    width: 25px;
+    height: 25px;
+    margin: 0px 4px;
+    border-style: solid;
+    border-color: maroon;
+}
