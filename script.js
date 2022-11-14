@@ -7,8 +7,15 @@ let clickCount = "0";
 button.addEventListener('click', function buttonClicked() {
         width = prompt("Width:", " ");
         height = prompt("Height:", " ");
-        ++clickCount;
-        gridSize();
+        
+        if ( width > 100 || height > 100) {
+            alert("100 is limit for the grid size. Please insert lower values.");
+        } else if ( width <= 0 || height <= 0) {
+            alert("0 is too small of a value. Please insert your values again.")
+        } else if ( width > 0 && height > 0) {
+            ++clickCount;
+            gridSize();
+        }
 });
 
 
